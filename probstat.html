@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiple Options Selection</title>
+<style>
+  /* Center align the form and set background image */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bg.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Set text color to white */
+  }
+
+  form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background to the form */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .options label {
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Choose your problem statement:</h2>
+
+<form action="textbox.html"> <!-- Modify action attribute to the desired URL -->
+  <div class="options">
+    <label for="Technical Problem"><input type="checkbox" id="option1" name="Technical Problem" value="Option 1"> Technical Problem</label>
+    <label for="Lack of publicity"><input type="checkbox" id="option2" name="Lack of Publicity" value="Option 2"> Lack of Publicity</label>
+    <label for="Industrial Issues"><input type="checkbox" id="option3" name="Industrial Issues" value="Option 3"> Industrial Issues</label>
+    <label for="Unrecognized Locality"><input type="checkbox" id="option4" name="Unrecognized Locality" value="Option 4"> Unrecognized Locality</label>
+    <!-- <label for=""><input type="checkbox" id="option5" name="option" value="Option 5"> Option 5</label><br> -->
+    <!-- Add more options as needed -->
+  </div>
+
+  <input type="submit" value="Next">
+</form>
+
+</body>
+</html>
